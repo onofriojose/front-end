@@ -1,0 +1,14 @@
+/* selectores */
+/* selectores de id - #nombreId */
+/* selectores de clase - .nombreClase */
+/* selectores de etiqueta - div */
+/* selector universal - * -asterisco */
+#text1 {
+    background-color: #8a2be2;
+}
+
+#text2{
+    background-color: #ff7f50;
+    width: 50%;
+    display: none;
+}

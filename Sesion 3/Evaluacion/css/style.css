@@ -1,0 +1,90 @@
+#imagen {
+    height: 4cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#cabecera {
+    height: 6cm;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    background-image: url(https://i.postimg.cc/GhvYVQkf/fondo.jpg);
+    background-size: 15cm;
+    background-repeat: repeat-x;
+    margin-bottom: 0.5cm;
+}
+#cabecera tr td {
+    color: rgb(107, 104, 104);
+    vertical-align: bottom;
+}
+#titulo {
+    font-size: 4em;
+}
+div {
+    text-align: center;
+}
+.titu2 {
+    display: inline-block;
+    border-top: 3px solid black;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+#gaseosas {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 6cm;
+    padding-left: 15%;
+    padding-inline-end: 15%;
+}
+#tablas {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 6cm;
+    padding-left: 15%;
+    padding-inline-end: 15%;
+}
+#shops {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 6cm;
+    padding-left: 15%;
+    padding-inline-end: 15%;
+}
+#contenido {
+    text-align: center;
+}
+#comunica {
+    color: white;
+    background-color: rgb(56, 55, 55);
+    width: 400px; 
+    height: 575px;
+    margin: 0 auto; 
+}
+#reservados {
+    color: white;
+    background-color: rgb(56, 55, 55);
+    width: 400px; 
+    height: 380px;
+    margin: 0 auto; 
+}
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5cm;
+    background-image: url(https://i.postimg.cc/GhvYVQkf/fondo.jpg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  
+footer p {
+    color: white;
+    text-align: center;
+}
+  

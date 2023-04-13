@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nimrodel Pub Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="icon" href="https://i.postimg.cc/VLc27dGp/n.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <img src="img/n.png" alt="" id="imagen">
+  <!--cabecera y barra de navegacion-->
+  <table id="cabecera">
+    <tr>
+      <td>Nuestro Productos</td>
+      <td>Sobre Nosotros</td>
+      <td><a href="#comuniquemonos">Comuniquemonos</a></td>
+      <td><a href="#reserva">Reserva</a></td>
+    </tr>
+    <!--tabla para el contenido-->
+  </table>
+  <table id="contenido">
+    <thead>
+      <h1 class="text-center" id="titulo">Nimrodel Pub Restaurant</h1><br>
+      <div>
+        <h2 class="titu2">Destacados de la semana</h2>
+      </div>
+    </thead>
+    <tr>
+      <td>
+        <img src="https://i.postimg.cc/44crbz5p/bebidas.jpg" alt="Gaseosas" id="gaseosas">
+        <h3>Gaseosas</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa reiciendis rerum quaerat, velit,
+          fugit
+          sequi dignissimos laboriosam reprehenderit quis tempore eum! Dolorem voluptate sint dolorum veniam possimus
+          quibusdam dolor?</p>
+        </div>
+      </td>
+      <td>
+        <img src="https://i.postimg.cc/FHr84wQx/tablas.jpg" alt="Tablas" id="tablas">
+        <h3>Tablas</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa reiciendis rerum quaerat, velit,
+          fugit
+          sequi dignissimos laboriosam reprehenderit quis tempore eum! Dolorem voluptate sint dolorum veniam possimus
+          quibusdam dolor?</p>
+        </div>
+      </td>
+      <td>
+        <img src="https://i.postimg.cc/KvrwCxCz/shop.jpg" alt="SHOPS" id="shops">
+        <h3>Shop Cerveza</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa reiciendis rerum quaerat, velit,
+          fugit
+          sequi dignissimos laboriosam reprehenderit quis tempore eum! Dolorem voluptate sint dolorum veniam possimus
+          quibusdam dolor?</p>
+        </div>
+      </td>
+    </tr>
+  </table><br><br><br>
+
+  <section>
+
+  </section>
+  <div id="comunica">
+    <h1>Comuniquemonos</h1>
+    <form action="" id="comuniquemonos">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" placeholder="Juanita Perez" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" required><br><br>
+
+      <label for="correo">Correo</label>
+      <input type="email" name="correo" placeholder="ejemplo@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+
+      <label for="telefono">Telefono</label>
+      <input type="tel" name="telefono" placeholder="+569XXXXXXXX" pattern="^(?:\+56|0)[1-9]\d{7}$" required><br><br>
+
+      <label for="motivo">Motivo</label>
+      <input type="text" name="motivo" id="sugerencia" required><br><br>
+      <textarea name="sugerencia" id="motivo" cols="30" rows="10"></textarea><br><br>
+
+      <button>Enviar</button>
+    </form>
+  </div>
+  <br> <br> <br>
+  <div id="reservados">
+    <h1>Reserva</h1>
+    <form action="" class="ms-1" id="reserva">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" placeholder="Juanita Perez" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" required><br><br>
+
+      <label for="correo">Correo</label>
+      <input type="email" name="correo" placeholder="ejemplo@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+
+      <label for="telefono">Telefono</label>
+      <input type="tel" name="telefono" placeholder="+569XXXXXXXX" pattern="^(?:\+56|0)[1-9]\d{7}$" required><br><br>
+
+      <label for="fecha">Fecha</label>
+      <input type="datetime-local" name="fecha"><br><br>
+
+      <label for="cantidad">Cantidad de Asistentes</label><br>
+      <input type="number" name="cantidad" required><br><br>
+
+      <button>Reservar</button>
+    </form><br><br>
+  </div>
+  <br>
+  <div>
+    <footer>
+      <p>Todos los derechos reservados &reg; 2023</p>
+    </footer>
+  </div>
+  <!--codigo java para bootstrap-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

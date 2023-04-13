@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nimrodel Pub Restaurant</title>
+    <!--bootstrap style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- estilo propio -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand w-75" href="#"><img src="./img/n.png" alt="logo" class=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- titulo -->
+    <section class="mt-5">
+        <div class="container text-center">
+          <h1 class="pb-4 text-secondary fw-bold">Nimrodel Pub Restaurant</h1>
+          <h4 class="pt-3 fw-bold">Destacados de la semana</h4>
+        </div>
+    </section>
+
+    <!-- cartas -->
+    <section class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+            <!-- primera carta -->
+            <div class="col my-2">
+              <div class="card h-100">
+                <img src="./img/bebidas.jpg" class="card-img-top object-fit-cover" alt="bebidas" style="height: 20vw;">
+                <div class="card-body">
+                  <h5 class="card-title">GASEOSAS</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <!-- segunda carta -->
+            <div class="col my-2">
+              <div class="card h-100">
+                <img src="./img/tablas.jpg" class="card-img-top object-fit-cover" alt="tablas" style="height: 20vw;">
+                <div class="card-body">
+                  <h5 class="card-title">TABLAS</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <!-- tercera carta -->
+            <div class="col my-2">
+              <div class="card h-100">
+                <img src="./img/shop.jpeg" class="card-img-top object-fit-cover" alt="shops" style="height: 20vw;">
+                <div class="card-body">
+                  <h5 class="card-title">SHOP CERVEZA</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- formularios -->
+    <section class="container mt-5 mb-5 d-none d-md-block">
+      <div class="row">
+        <!-- contacto -->
+        <div class="formulario col-sm-12 col-md-12 mb-5 m-auto p-4 bg-dark text-light">
+            <form>
+                <h5 class="text-center">Comentarios</h5>
+                <div class="mb-3"> <!--nombre-->
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" aria-describedby="ingresoNombre" placeholder="Fulanito Perez">
+                </div>
+                <div class="mb-3"><!--Correo-->
+                  <label for="correo" class="form-label">Correo</label>
+                  <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com">
+                </div>
+                <div class="mb-3"><!--telefono-->
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="956000890">
+                </div>
+                <div class="mb-3"><!--comentarios-->
+                  <label for="floatingTextarea">Comentarios</label>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                </div>
+                <select class="form-select mb-3" aria-label="select"><!--selector-->
+                  <option selected>Motivos</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="mb-3 form-check"> <!--checkbox-->
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <!-- boton -->
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </form>
+        </div>
+        <!-- reserva -->
+        <div class="formulario col-sm-12 col-md-12 mb-5 m-auto p-4 bg-dark text-light">
+            <form id="reserva">
+              <h5 class="text-center">Reserva</h5>
+              <div class="mb-3"> <!--nombre-->
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="ingresoNombre" placeholder="Fulanito Perez">
+              </div>
+              <div class="mb-3"><!--Correo-->
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com">
+              </div>
+              <div class="mb-3"><!--telefono-->
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="956000890">
+              </div>
+              <div class="mb-3"><!--fecha-->
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha">
+              </div>
+              <div class="mb-3"><!--hora-->
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="hora">
+              </div>
+              <div class="mb-3"><!--cantidad de asistentes-->
+                <label for="asistentes" class="form-label">Cantidad de asistentes</label>
+                <input type="number" class="form-control" id="asistentes" min="1">
+              </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- carousel de imagenes -->
+    <section class="container-fluid mb-5 p-0 stycky-bottom">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators mb-5">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/chorillana.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mojito.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/vino.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    
+    <!-- footer o pie de pagina -->
+    <footer class="p-3 bg-dark text-light text-center fixed-bottom">
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <!-- bootstrap javascript, popper y bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
+
+<!-- 
+https://i.postimg.cc/44crbz5p/bebidas.jpg
+https://i.postimg.cc/VLc27dGp/n.png
+https://i.postimg.cc/KvrwCxCz/shop.jpg
+https://i.postimg.cc/FHr84wQx/tablas.jpg 
+-->

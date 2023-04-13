@@ -1,0 +1,10 @@
+/*SELECTORES*/
+/*Selector de id*/
+#tabla {
+    border-collapse: separate;
+    border-color: brown;
+}
+
+.rojo {
+    background-color: red;
+}
