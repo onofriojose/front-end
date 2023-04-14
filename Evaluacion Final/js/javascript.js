@@ -3,7 +3,7 @@ $(document).ready(function () {
         .then(response => response.json())
         .then(data => {
             data.forEach(digimon => {
-                let option = $('<option></option>').text(digimon.name).val(digimon.img);//Despues de entender que option podia tener mas valores, le agrego el nombre del digimon al texto, el url al valor para poder cambiar la fuente de la etiqueta "img" por cada digimon seleccionado y el level lo capturo con el atributo data- usando attr
+                let option = $('<option></option>').text(digimon.name).val(digimon.img);//option toma los valor del nombre del digimon y lo muestra en el contenido de select, toma el url para agregarlo en src de la etiqueta img con .val
                 $("#seleccion").append(option);
             });
             $("#seleccion").change(function () {
